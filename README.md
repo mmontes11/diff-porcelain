@@ -18,8 +18,6 @@ jobs:
   check-diff:
     name: Check diff
     runs-on: ubuntu-latest
-    needs: detect-noop
-    if: ${{ needs.detect-noop.outputs.noop != 'true' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
