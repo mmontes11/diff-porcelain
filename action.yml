@@ -1,6 +1,6 @@
-name: "Check diff"
+name: "Diff porcelain"
 
-description: "Checks if the current branch is clean and errors otherwise"
+description: "Checks if the current branch is clean and errors a custom message otherwise"
 
 inputs:
   message:
