@@ -1,6 +1,6 @@
 # 🫖 diff-porcelain
 
-Checks if the current branch is clean and errors a custom message otherwise.
+Checks if the current branch is clean and errors with a custom message otherwise.
 
 # Usage
 

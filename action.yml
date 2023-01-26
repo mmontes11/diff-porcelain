@@ -1,6 +1,10 @@
 name: "Diff porcelain"
 
-description: "Checks if the current branch is clean and errors a custom message otherwise"
+description: "Checks if the current branch is clean and with errors a custom message otherwise"
+
+branding:
+  icon: activity
+  color: green
 
 inputs:
   message:
