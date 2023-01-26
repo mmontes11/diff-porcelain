@@ -28,7 +28,7 @@ jobs:
         run: make generate
 
       - name: Diff porcelain
-        uses: mmontes/diff-porcelain@v0.0.1
+        uses: mmontes11/diff-porcelain@v0.0.1
         with:
           message: Generated artifacts are not up to date. Run 'make generate' and commit the changes.
 ```
