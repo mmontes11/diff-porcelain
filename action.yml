@@ -14,14 +14,14 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Display changes
-      shell: bash
-      run: git status --porcelain
-
     - name: Error if changes detected
       shell: bash
       run: |
-        if [[ `git status --porcelain` ]]; then
+        changes="$(git status --porcelain)"
+        if [[ -n "$changes" ]]; then
           echo "${{ inputs.message }}"
+          echo ""
+          echo "Changed files:"
+          echo "$changes"
           exit 1
         fi
